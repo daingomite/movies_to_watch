@@ -1,0 +1,13 @@
+<h1>List of Movies</h1>
+
+<table>
+<% @movies.each do |movie| %>
+  <tr>
+    <td><a href="/movies/<%= movie.id %>"><%= movie.title %></a></td>
+    <td><%= movie.year %></td>
+    <td><%= movie.description %></td>
+    <td><%= movie.duration %></td>
+    <td><%= movie.image_url %></td>
+  </tr>
+<% end %>
+</table>
