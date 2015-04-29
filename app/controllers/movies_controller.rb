@@ -38,6 +38,13 @@ class MoviesController < ApplicationController
   def edit_form
     @movie = Movie.find(params[:id])
   end
+
+  def destroy
+    m = Movie.find(params[:id])
+    m.destroy
+
+    redirect_to("/movies")
+  end
 end
 
 
