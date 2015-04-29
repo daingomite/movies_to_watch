@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   # Routes to READ movies
   get("/movies",           { :controller => "movies", :action => "index" })
-  get("/movies/:id",       { :controller => "movies", :action => "show" })
+  get("/movies/:zebra",       { :controller => "movies", :action => "show" })
 
   # Routes to UPDATE movies
   get("/movies/:id/edit",  { :controller => "movies", :action => "edit_form" })
