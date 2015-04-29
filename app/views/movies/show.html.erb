@@ -1,19 +1,22 @@
 <h1>Movie Details</h1>
 
+<a href="/movies/<%= @movie.id %>/edit">Edit</a>
+<a href="/delete_movie/<%= @movie.id %>">Delete</a>
+
 <dl>
   <dt>Title</dt>
   <dd><%= @movie.title %></dd>
 
-  <dt>year</dt>
+  <dt>Year</dt>
   <dd><%= @movie.year %></dd>
 
-  <dt>duration</dt>
+  <dt>Duration</dt>
   <dd><%= @movie.duration %></dd>
 
-  <dt>description</dt>
+  <dt>Description</dt>
   <dd><%= @movie.description %></dd>
 
-  <dt>image_url</dt>
-  <dd><%= @movie.image_url %></dd>
+  <dt>Image</dt>
+  <dd><img src="<%= @movie.image_url %>" width="200"></dd>
 
 </dl>
