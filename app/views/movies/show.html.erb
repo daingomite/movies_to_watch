@@ -43,6 +43,16 @@
           </div>
         </div>
       </div>
+
+      <% roles = Role.where(:movie_id => @movie.id) %>
+
+      <ul>
+        <% roles.each do |role| %>
+          <li><%= role.character_name %></li>
+        <% end %>
+      </ul>
+
+
     </div>
   </div>
 </div>
